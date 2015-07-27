@@ -9,17 +9,10 @@ namespace Dealship_App.Models
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
-        public bool crudAccess
-        {
-            get
-            {
-                return this.crudAccess;
-            }
-            set
-            {
-                this.crudAccess = value;
-            }
-        }
+        public bool crudAccess { get; set; }
+        string firstName { get; set; }
+        string lastName { get; set; }
+        
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
