@@ -9,6 +9,8 @@ namespace Dealship_App.Models
 {
     public class Vehicles
     {
+        public int id { get; set; }
+
         public int Year { get; set; }
 
         public string Make { get; set; }
