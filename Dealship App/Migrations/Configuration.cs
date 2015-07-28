@@ -26,6 +26,39 @@ namespace Dealship_App.Migrations
                     MPG = 25,
                     MSRP = 25000
 
+                },
+
+                new Vehicles()
+                {
+                    id = 2,
+                    Year = 2015,
+                    Make = "Mitsubishi",
+                    Model = "Lancer",
+                    Color = "Blue",
+                    MPG = 30,
+                    MSRP = 17500
+                },
+
+                new Vehicles()
+                {
+                    id = 3,
+                    Year = 2015,
+                    Make = "Audi",
+                    Model = "A8",
+                    Color = "White",
+                    MPG = 20,
+                    MSRP = 115000
+                },
+
+                new Vehicles()
+                {
+                    id = 4,
+                    Year = 2015,
+                    Make = "Tesla",
+                    Model = "Roadster",
+                    Color = "Gold",
+                    MPG = 245,
+                    MSRP = 101500
                 }
                 );
         }
