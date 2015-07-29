@@ -9,6 +9,15 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+<p>
+    @using (Html.BeginForm("Index", "Vehicles", FormMethod.Get))
+    {
+    <p>
+        Make: @Html.DropDownList("make", "All")
+        <input type="submit" value="Search" />
+    </p>
+    }
+</p>
 <table class="table">
     <tr>
         <th>

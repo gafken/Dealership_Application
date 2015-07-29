@@ -15,9 +15,27 @@ namespace Dealship_App.Controllers
         private VehicleDBContext db = new VehicleDBContext();
 
         // GET: Vehicles
-        public ActionResult Index()
+
+        public ActionResult Index(string make)
         {
-            return View(db.Vehicle.ToList());
+            var makeList = new List<string>();
+            var carsQry = from k in db.Vehicle
+                          orderby k.Make
+                          select k.Make;
+
+            makeList.AddRange(carsQry.Distinct());
+            ViewBag.make = new SelectList(makeList);
+
+            var cars = from c in db.Vehicle
+                       select c;
+
+
+            if (!String.IsNullOrEmpty(make))
+            {
+                cars = cars.Where(x => x.Make == make);
+            }
+
+            return View(cars);
         }
 
         // GET: Vehicles/Details/5
