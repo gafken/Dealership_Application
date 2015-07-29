@@ -179,6 +179,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-Dealship App-20150727105237.mdf" />
+    <Content Include="App_Data\aspnet-Dealship App-20150727105237_log.ldf">
+      <DependentUpon>aspnet-Dealship App-20150727105237.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Vehicle.mdf" />
+    <Content Include="App_Data\Vehicle_log.ldf">
+      <DependentUpon>Vehicle.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -240,9 +248,7 @@
     <Content Include="Views\Vehicles\Edit.cshtml" />
     <Content Include="Views\Vehicles\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
