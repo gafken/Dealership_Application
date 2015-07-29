@@ -64,7 +64,7 @@ namespace Dealship_App.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,Year,Make,Model,Color,MPG,MSRP")] Vehicles vehicles)
+        public ActionResult Create([Bind(Include = "id,Year,Make,Model,Color,MPG,MSRP,Image")] Vehicles vehicles)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace Dealship_App.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,Year,Make,Model,Color,MPG,MSRP")] Vehicles vehicles)
+        public ActionResult Edit([Bind(Include = "id,Year,Make,Model,Color,MPG,MSRP,Image")] Vehicles vehicles)
         {
             if (ModelState.IsValid)
             {

@@ -110,3 +110,4 @@ C:\Users\Administrator\Documents\GitHub\Dealership_Application\Dealship App\obj\
 C:\Users\Administrator\Documents\GitHub\Dealership_Application\Dealship App\obj\Debug\Dealship App.pdb
 C:\Users\Administrator\Documents\GitHub\Dealership_Application\Dealship App\obj\Debug\Dealship_App.Migrations.Initial.resources
 C:\Users\Administrator\Documents\GitHub\Dealership_Application\Dealship App\obj\Debug\Dealship App.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\Dealership_Application\Dealship App\obj\Debug\Dealship_App.Migrations.Images.resources
