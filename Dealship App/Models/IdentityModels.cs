@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Collections.Generic;
 
 namespace Dealship_App.Models
 {
@@ -12,7 +13,7 @@ namespace Dealship_App.Models
         public bool crudAccess { get; set; }
         string firstName { get; set; }
         string lastName { get; set; }
-        
+        List<Vehicles> vehiclesPurchased = new List<Vehicles>();
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
