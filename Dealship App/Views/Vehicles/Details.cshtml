@@ -9,57 +9,58 @@
 <div>
     <h4>Vehicles</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Year)
-        </dt>
+    <div style="width:500px">
+        <img src="@Html.DisplayFor(model => model.Image)" style="max-width:100%" />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Year)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Year)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Year)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Make)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Make)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Make)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Make)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Model)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Model)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Model)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Model)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Color)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Color)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MPG)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.MPG)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.MPG)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.MPG)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MSRP)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.MSRP)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.MSRP)
-        </dd>
-
-    </dl>
-</div>
+            <dd>
+                @Html.DisplayFor(model => model.MSRP)
+            </dd>
+        </dl>
+    </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
     @Html.ActionLink("Back to List", "Index")

@@ -62,9 +62,7 @@
             @Html.DisplayFor(modelItem => item.MSRP)
         </td>
         <td>
-
-            <img src="@Html.DisplayFor(modelItem => item.Image)" />
-
+            <img src="@Html.DisplayFor(modelItem => item.Image)" width="100" height="50"/>
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
