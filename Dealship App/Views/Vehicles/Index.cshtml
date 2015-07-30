@@ -44,22 +44,25 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Year)
+            <h1>@Html.DisplayFor(modelItem => item.Year)</h1>
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Make)
-        </td>
+            <h1>@Html.DisplayFor(modelItem => item.Make)</h1>
+</td>
         <td>
-            @Html.DisplayFor(modelItem => item.Model)
-        </td>
+            <h1>@Html.DisplayFor(modelItem => item.Model)</h1>
+</td>
         <td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>
+            <h1>@Html.DisplayFor(modelItem => item.Color)</h1>
+</td>
         <td>
-            @Html.DisplayFor(modelItem => item.MPG)
-        </td>
+            <h1>@Html.DisplayFor(modelItem => item.MPG)</h1>
+</td>
         <td>
-            @Html.DisplayFor(modelItem => item.MSRP)
+            <h1>@Html.DisplayFor(modelItem => item.MSRP)</h1>
+</td>
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.Image)" width="100" height="50"/>
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id }) |

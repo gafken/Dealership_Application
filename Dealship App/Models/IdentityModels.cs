@@ -11,9 +11,6 @@ namespace Dealship_App.Models
     public class ApplicationUser : IdentityUser
     {
         public bool crudAccess { get; set; }
-        string firstName { get; set; }
-        string lastName { get; set; }
-        List<Vehicles> vehiclesPurchased = new List<Vehicles>();
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
