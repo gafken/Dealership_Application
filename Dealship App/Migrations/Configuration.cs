@@ -48,7 +48,9 @@ namespace Dealship_App.Migrations
 
                 MSRP = 25000,
 
-                Image = "http://www.chevrolet.com/content/dam/Chevrolet/northamerica/usa/nscwebsite/en/Home/Vehicles/Cars/2015_Camaro/Model_Overview/01_images/2015-chevrolet-camaro-sports-car-mo-accessories-648x316-04.jpg"
+                Image = "http://www.chevrolet.com/content/dam/Chevrolet/northamerica/usa/nscwebsite/en/Home/Vehicles/Cars/2015_Camaro/Model_Overview/01_images/2015-chevrolet-camaro-sports-car-mo-accessories-648x316-04.jpg",
+
+                boughtBy = "606d9b4a-a355-4e78-862e-95205c049c08"
 
             },
 

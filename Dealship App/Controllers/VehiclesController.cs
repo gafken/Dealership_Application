@@ -29,6 +29,7 @@ namespace Dealship_App.Controllers
             var cars = from c in db.Vehicle
                        select c;
 
+            cars = cars.Where(x => x.boughtBy == null);
 
             if (!String.IsNullOrEmpty(make))
             {

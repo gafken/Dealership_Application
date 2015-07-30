@@ -24,6 +24,8 @@ namespace Dealship_App.Models
         public int MSRP { get; set; }
 
         public string Image { get; set; }
+
+        public string boughtBy { get; set; }
     }
 
     public class VehicleDBContext : DbContext
